@@ -151,3 +151,59 @@
 
 
 
+.main-content{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background-color: grey;
+    align-content: space-between;
+
+}
+.projects-section, .announcements-section, .trending-section{
+    grid-column: 1/5;
+    display: grid;
+    grid-template-rows: 40px 1fr;
+    padding: 8px;
+    margin-left: 20px;
+}
+
+.projects-section>p, .announcements-section>p, .trending-section>p{
+    padding-top: 15px;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+    gap: 20px;
+    
+}
+.project-card, 
+.announcements, 
+.trending-section .account{
+    /* outline: 2px solid black; */
+    background-color: white;
+}
+
+.extra{
+    grid-column: -3/-1;
+    max-width: 80%;
+    /* margin: 0 20px; */
+}
+
+
+.account{
+    display: grid;
+    grid-auto-flow: column;
+    padding: 15px;
+}
+
+.account img{
+    height: 50px;
+    width: 50px;
+    /* margin: 30px; */
+    border-radius: 60px;
+}
+
+.account-info{
+    align-self: center;
+}
