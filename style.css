@@ -1,3 +1,7 @@
+:root{
+    --blue-color: rgb(20, 154, 207)
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -7,27 +11,28 @@
 
 .dashboard{
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
 }
 
 .sidebar{
     grid-column: 1/2;
     grid-row: 1/-1;
-    background-color: aqua;    
+    background-color: var(--blue-color); 
+    padding-top: 18px;   
+}
+
+.sidebar * {
+    color: white;
 }
 
 .sidebar .grid-container{
     display: grid;
-    outline: 2px solid green;
-}
-
-
-
-.sidebar > *{
     /* outline: 2px solid green; */
-    /* margin-bottom: 20px; */
+    gap: 30px;
 }
+
+
 
 
 .header{
@@ -42,16 +47,14 @@
     display: grid;
     grid-template-columns: 0.4fr 1fr;
     justify-content: start;
-    gap: 15px;
+    /* gap: 8px; */
 }
 
 .sidebar .icon {
-    /* justify-self: center; */
-    /* align-self: center; */
-    /* outline: 2px solid green; */
-    /* width: 100%; */
-    
+    justify-self: center;
 }
+
+
 
 
 
@@ -68,12 +71,12 @@
 }
 .left{
     display: grid;
-    grid-template-rows: 4fr 2fr;
+    grid-template-rows: 62fr 38fr;
 }
 
 .right{
     display: grid;
-    grid-template-rows: 2fr 4fr;
+    grid-template-rows: 38fr 62fr;
 }
 .left *, .right *{
     background-color: white;
