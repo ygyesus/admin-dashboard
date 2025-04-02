@@ -86,3 +86,68 @@
 
 
 
+.header{
+    display: grid;
+    align-content: space-around;
+    padding: 15px;
+    background-color: white;
+}
+
+
+
+.header .top, .header .top .search-section, .header .top .additional, .header .bottom, .header .bottom .handle{
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.header .top{
+    /* gap: 100px; */
+    grid-template-columns: 7fr 3fr;
+
+}
+
+.header .bottom{
+    grid-template-columns: 6fr 4fr;
+  
+}
+
+
+.search-section input{
+    padding: 2px;
+    background-color: grey;
+    border-radius: 15px;
+
+}
+
+.search-section{
+    grid-template-columns: 1fr 10fr;
+    outline: 2px solid black;
+    margin-right: 120px;
+    
+}
+
+.top .additional,.bottom .handle, .bottom .buttons{
+    outline: 2px solid black;
+}
+
+.buttons{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 15px;
+}
+
+.buttons button{
+    background-color: var(--blue-color);
+    border-radius: 15px;
+    color: white;
+    width: 80%;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    border: 0px;
+
+}
+
+
+
+
