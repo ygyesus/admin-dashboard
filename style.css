@@ -1,6 +1,6 @@
 :root{
     --blue-color: rgb(20, 154, 207);
-    --grey-color: rgb(224, 217, 217);
+    --grey-color: rgba(165, 180, 198, 0.361);
     --iconify-size: 48px;
     
 }
@@ -74,7 +74,7 @@ a, a:visited{
 }
 
 .main-content{
-    background-color: yellowgreen;
+    padding-bottom: 50px;
 }
 
 .sidebar .services a, .main-logo a, .meta a{
@@ -187,18 +187,20 @@ a, a:visited{
 
 
 
+
 .search-section input{
     padding: 4px;
     padding-left: 8px;
     background-color: var(--grey-color);
     border-radius: 15px;
-    height: 100%;
+    /* height: 100%; */
     font-size: 18px;
     height: 80%;
     align-self: center;
 
     /* outline: 2px solid black; */
     margin-left: -15px;
+    border: none;
     
 }
 
@@ -283,18 +285,68 @@ a, a:visited{
     display: grid;
     grid-template-rows: 40px 1fr;
     padding: 8px;
-    margin-left: 20px;
+    
 }
 
-.projects-section>p, .announcements-section>p, .trending-section>p{
-    padding-top: 15px;
+.projects-section{
+    margin-left: 10px;
+    /* height: 80%; */
+}
+
+.project-card{
+    font-size: 13px;
+}
+
+p.section-name{
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.project-title{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+p.three-icons{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+    gap: 18px;
+    height: 20px;
+}
+p.three-icons *{
+    font-size: calc(0.4*var(--iconify-size));
+    /* outline: 2px solid black; */
+}
+
+.project-card{
+    display: grid;
+    
+    align-content: space-between;
+    /* height: 80%; */
+
+    padding: 15px;
+    border-left: 10px solid goldenrod;
+    border-radius: 10px;
+    gap: 20px;
+    /* outline: 2px solid black; */
+    /* align-self: end; */
+}
+.project-card > *{
+    /* outline: 2px solid black;     */
 }
 
 .projects{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-auto-flow: row;
-    gap: 20px;
+    justify-content: space-around;
+    outline: 2px solid black;
+    row-gap: 25px;
+    column-gap: 10px; 
     
 }
 .project-card, 
@@ -306,8 +358,9 @@ a, a:visited{
 
 .extra{
     grid-column: -3/-1;
-    max-width: 80%;
+    /* max-width: 80%; */
     /* margin: 0 20px; */
+    outline: 2px solid black;
 }
 
 
