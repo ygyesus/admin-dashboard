@@ -411,7 +411,7 @@ p.three-icons *{
 label{
     align-self: center;
 }
-.icon, .account, button, a{
+.icon, .account, button, a, .iconify{
     cursor: pointer;
 }
 
