@@ -171,7 +171,7 @@ a, a:visited{
     width: 60px;
 }
 
-.handle p, .additional p{
+.handle p, .additional p, .handle a{
     font-size: 20px;
     font-weight: 800;
 }
@@ -294,7 +294,7 @@ a, a:visited{
 }
 
 .project-card{
-    font-size: 13px;
+    font-size: 14px;
 }
 
 p.section-name{
@@ -305,11 +305,40 @@ p.section-name{
 }
 
 
-.project-title{
+.project-title, .announcement-title{
     font-size: 16px;
     font-weight: 600;
 }
 
+
+.announcements{
+    border-radius: 8px;
+
+}
+
+.announcements hr{
+    margin: 0;
+    padding: 0;
+    /* margin-top: 25px; */
+    background-color: var(--grey-color);
+    height: 0.5px;
+}
+
+.announcements p{
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+.announcement-title{
+    font-size: 14.5px;
+    margin: 0;
+}
+
+.announcement-post{
+    margin: 15px;
+    font-size: 13px;
+    padding: 10px;
+}
 p.three-icons{
     display: grid;
     grid-auto-flow: column;
@@ -329,11 +358,10 @@ p.three-icons *{
     /* height: 80%; */
 
     padding: 15px;
+    padding-bottom: 30px;
     border-left: 10px solid goldenrod;
     border-radius: 10px;
-    gap: 20px;
     /* outline: 2px solid black; */
-    /* align-self: end; */
 }
 .project-card > *{
     /* outline: 2px solid black;     */
@@ -342,11 +370,11 @@ p.three-icons *{
 .projects{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: repeat(auto-fit, minmax(150px, 210px)); */
     grid-auto-flow: row;
     justify-content: space-around;
-    outline: 2px solid black;
-    row-gap: 25px;
-    column-gap: 10px; 
+    /* outline: 2px solid black; */
+    gap: 20px;
     
 }
 .project-card, 
